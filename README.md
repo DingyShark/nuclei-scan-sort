@@ -1,6 +1,5 @@
 # nuclei-scan-sort
 
-![sorted](https://user-images.githubusercontent.com/58632878/218885613-2fb46456-ef8e-41c9-92b8-23a150436319.jpg)
 Simple Python script to sort nuclei scans by severity and URL
 
 1. Install dependencies:
@@ -14,3 +13,4 @@ nuclei -l targets.txt -o scan.txt
 
 python3 nuclei_sort.py -i scan.txt
 
+![sorted](https://user-images.githubusercontent.com/58632878/218885613-2fb46456-ef8e-41c9-92b8-23a150436319.jpg)
