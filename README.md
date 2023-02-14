@@ -2,14 +2,13 @@
 
 Simple Python script to sort nuclei scans by severity and URL
 
-Install dependencies:
+1. Install dependencies:
 pip3 install -r requirements.txt
 
-
-Simply save nuclei scan with -o option:
+2. Simply save nuclei scan with -o option:
 
 nuclei -l targets.txt -o scan.txt
 
-Then proceed it with script:
+3. Proceed it with script:
 
 python3 nuclei_sort.py -i scan.txt
