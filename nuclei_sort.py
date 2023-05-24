@@ -14,7 +14,7 @@ def sort_by_url(scan_results):
 
 
 def sort_by_severity(scan_results):
-    severity_order = {'[critical]': 1, '[high]': 2, '[medium]': 3, '[low]': 4, '[info]': 5, '[unknown]':6}
+    severity_order = {'[critical]': 1, '[high]': 2, '[medium]': 3, '[low]': 4, '[info]': 5, '[unknown]':6, '[]':7}
     return sorted(scan_results, key=lambda x: severity_order[x.split(" ")[2]])
 
 
@@ -73,7 +73,8 @@ def main(input_file):
         '[medium]': Fore.YELLOW,
         '[low]': Fore.GREEN,
         '[info]': Fore.CYAN,
-        '[unknown]': Fore.WHITE
+        '[unknown]': Fore.WHITE,
+        '[]': Fore.WHITE
     }
 
     # Sort by severity and URL and split the list
